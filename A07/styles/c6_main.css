@@ -28,6 +28,51 @@ header {
     background: linear-gradient(30deg, #f6bb73 0%, #f6bb73 40%, white 50%, #f6bb73 60%, #f6bb73 100%);
 }
 
+nav#nav_menu {
+    margin-bottom: 20px;
+}
+
+nav#nav_menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav#nav_menu ul li {
+    float: left;
+    width: 20%;
+}
+
+nav#nav_menu ul li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #800000;
+    color: white;
+    font-weight: bold;
+}
+
+nav#nav_menu ul li a.current {
+    color: yellow;
+}
+
+nav#nav_menu ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+nav#nav_menu ul li:hover ul {
+    display: block;
+}
+
+nav#nav_menu ul li ul li {
+    float: none;
+}
+
 section {
     width: 525px;
     float: right;
@@ -64,12 +109,17 @@ article img {
 }
 
 section p, section blockquote, section ul {
-    margin-top: 0; 
+    margin-top: 0;
     margin-bottom: 5px;
 }
 
 aside img, aside h3 {
     margin: 10px 0;
+}
+
+section ul {
+    list-style-type: circle;
+}
 
 main h3 {
     font-size: 1.2em;
