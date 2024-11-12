@@ -173,3 +173,27 @@ h1 {
     padding: 0.5em 0 1em 0;
     margin: 0;
 }
+
+/* Added styles for submenu */
+nav#nav_menu ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+}
+
+nav#nav_menu ul li:hover ul {
+    display: block;
+}
+
+nav#nav_menu ul li ul li {
+    float: none;
+    width: 100%;
+}
+
+nav#nav_menu:after {
+    content: "";
+    display: block;
+    clear: both;
+}
