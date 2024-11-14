@@ -175,6 +175,7 @@ h1 {
     margin: 0;
 }
 
+/* Clear floats after the navigation menu */
 nav#nav_menu:after {
     content: "";
     display: block;
