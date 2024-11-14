@@ -67,9 +67,10 @@ nav#nav_menu ul li ul {
     top: 100%;
     left: 0;
     width: 100%;
+    background-color: #931420;
 }
 
-nav#nav_menu ul li:hover > ul {
+nav#nav_menu ul li:hover ul {
     display: block;
 }
 
@@ -136,4 +137,46 @@ header h2 {
 }
 
 header h3 {
-    font-size
+    font-size: 130%;
+    font-style: italic;
+}
+
+a:hover, a:focus {
+    font-style: italic;
+}
+
+footer p {
+    text-align: center;
+}
+
+.shadow {
+    text-shadow: 2px 2px #800000;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+:root {
+    --global-color-1: #800000;
+}
+
+header h2 {
+    color: var(--global-color-1);
+}
+
+.shadow {
+    text-shadow: 2px 2px var(--global-color-1);
+}
+
+h1 {
+    font-size: 150%;
+    padding: 0.5em 0 1em 0;
+    margin: 0;
+}
+
+nav#nav_menu:after {
+    content: "";
+    display: block;
+    clear: both;
+}
