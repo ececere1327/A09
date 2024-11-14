@@ -70,7 +70,7 @@ nav#nav_menu ul li ul {
     background-color: #931420;
 }
 
-nav#nav_menu ul li:hover ul {
+nav#nav_menu ul li:hover > ul {
     display: block;
 }
 
